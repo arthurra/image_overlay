@@ -220,7 +220,7 @@ ul{
 
 /*
  * DEMO-1 
- * Content Scale
+ * Content Scale Overlay
  */
 
 .demo-1 .thumbnail:hover .thumbnail__thumbnail-overlay{
@@ -251,12 +251,57 @@ ul{
   transform: scale(0.9);
 }
 
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8);
+
+/*
+* DEMO-2 
+* Content Scale Header
+*/
+
+.demo-2 .thumbnail{
+  height: 308px;
 }
+
+.demo-2 .thumbnail__thumbnail-overlay{
+  padding-top: 0;
+}
+
+.demo-2 .tumbnail__thumbnail-image {
+  overflow: hidden;
+  height: 100%;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s; 
+}
+
+.demo-2 .tumbnail__thumbnail-image img {
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-tansform 0.5s;
+  -ms-transition: -ms-transform 0.5s;
+  -o-transition: -o-transform 0.5s;
+  transition: tranform 0.5s; 
+}
+
+.demo-2 .thumbnail:hover .tumbnail__thumbnail-image{
+  height: 30%;
+}
+
+.demo-2 .thumbnail:hover .tumbnail__thumbnail-image img {
+  -webkit-transform: scale(1.3) translateY(-33.33%);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.demo-2 .thumbnail:hover .thumbnail__thumbnail-overlay{
+  -webkit-transform: translateY(30%);
+  -moz-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  -o-transform: translateY(30%);
+}
+
 
 
 
