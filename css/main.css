@@ -357,6 +357,10 @@ ul{
 .demo-3 .thumbnail{
   height: 308px;
   -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  -ms-perspective: 1500px;
+  -o-perspective: 1500px;
+  perspective: 1500px;
 }
 
 .demo-3 .thumbnail__overlay{
@@ -373,7 +377,6 @@ ul{
 
 .demo-3 .thumbnail__image {
   position: absolute;
-  height: 308px;
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
   -moz-transition: -moz-tansform 0.5s, opacity 0.5s;
   -ms-transition: -ms-transform 0.5s, opacity 0.5s;
@@ -429,6 +432,10 @@ ul{
 .demo-4 .thumbnail{
   height: 308px;
   -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  -ms-perspective: 1500px;
+  -o-perspective: 1500px;
+  perspective: 1500px;
 }
 
 
@@ -448,6 +455,10 @@ ul{
 
 .demo-4 .thumbnail:hover .thumbnail__image{
   -webkit-transform: rotateX(-20deg);
+  -moz-transform: rotateX(-20deg);
+  -ms-transform: rotateX(-20deg);
+  -o-transform: rotateX(-20deg);
+  transform: rotateX(-20deg);
 }
 
 .demo-4 .thumbnail:hover .thumbnail__overlay{
