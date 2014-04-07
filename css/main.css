@@ -98,14 +98,10 @@ textarea {
 }
 
 body{
-  background-color: #fdf6e3;
+  /*background-color: #fdf6e3;*/
 }
 
-header .title{
-  color: #4d4d4d;
-}
-
-.demo-container{
+.demo-container .row{
     width: 1024px;
     margin: auto;
     padding: 20px;
@@ -113,7 +109,22 @@ header .title{
 
 .demo-header{
   text-align: center;
-  margin: 50px 0;
+  padding: 75px 0;
+  background-color: #094f77;
+}
+
+.demo-header .title{
+  color: #fff;
+}
+.demo-section{
+  /*background-color: #3a97cc;*/
+  background-color: #10689a;
+  padding: 50px 0;
+}
+
+.demo-section--accent{
+  padding: 50px 0;
+  background-color: #094f77;
 }
 
 ul{
@@ -205,7 +216,7 @@ ul{
   -ms-transform: translateY(100%);
   -o-transform: translateY(100%);
   transform: translateY(100%);
-  visibility: hidden;
+  /*visibility: hidden;*/
   opacity: 0;
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
   -moz-transition: -moz-transform 0.5s, visibility 0s 0.5s, opacity 0.5s;
@@ -230,6 +241,7 @@ ul{
  * DEMO-1 
  * Content Scale Overlay
  */
+
 
 .demo-1 .thumbnail:hover .thumbnail__thumbnail-overlay{
   -webkit-transform: translateY(0%);
